@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Righteous&display=swap" rel="stylesheet">
+        <title>LEGO PROJECT</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <h1 class="navbar-brand"><a href="index.html">LEGO PROJECT</a></h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="member.html">Member</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="achievement.html">Achievement</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-contents container">
+                <video preload="none" src="video/top.mp4" autoplay muted controls loop playsinline class="w-100"></video>
+                <section id="about" class="py-5">
+                    <div class="section-title">レゴプロジェクトとは？</div>
+                    <p class="text-justify px-5">
+                        レゴブロックで建物の高低差や標高差を表しそこにプロジェクションマッピングで交通網などの都市情報を静的・動的に投影し可視化するプロジェクトです。
+                        茨城県つくば市、茨城県常総市、北海道天塩町を対象に 模型・プログラムを作成しました。
+                        ライドシェアや自動運転等の新モビリティシステム導入の 実現可能性を考察しています。
+                    </p>
+                </section>
+                <section class="bg-gray">
+                    <div class="row w-100 m-0">
+                        <div class="img1 col-12 col-md-6 p-0"></div>
+                        <div class="col-12 col-md-6 p-5">
+                            <div class="section-sub-title">[背景・概要]</div>
+                            <p class="text-justify">
+                                自動運転などを使ったモビリティイノベーションは社会を持続可能で便利に変えていくために重要です。
+                                しかし、その導入には市民の理解が必要不可欠であり、わかりやすくイメージしやすい方法でその効果を市民に提示する必要があります。
+                                このプロジェクトでは、人々に親しみやすいLEGOを使って多くの人々にその効果を示すこと試みます。
+                                モビリティイノベーションを、親しみやすくイメージしやすい存在にすることで、これが普及することを目指します。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row w-100 m-0">
+                        <div class="img2 col-12 col-md-6 p-0 order-md-2"></div>
+                        <div class="col-12 col-md-6 order-md-1 p-5">
+                            <div class="section-sub-title">[システム]</div>
+                            <p class="text-justify">
+                                大きく3つのステップを踏んで作られています。
+                                <ul class="decimal">
+                                    <li>(○○ピース以上の)レゴブロックを使って実際の街の模型を作成(図は茨城県つくば市)</li>
+                                    <li>Unity上に交通シミュレーションを作成</li>
+                                    <li>プロジェクターを用いて、2.のシミュレーションを1.で作成した模型に投影</li>
+                                </ul>
+                                模型はかなり精巧に作られており、標高データと建物の高さのデータを使用して現実に近いものになっています。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-gray">
+                    <div class="row w-100 m-0">
+                        <div class="img3 col-12 col-md-6 p-0"></div>
+                        <div class="col-12 col-md-6 p-5">
+                            <div class="section-sub-title">[対話型シミュレーション]</div>
+                            <p class="text-justify">
+                                モビリティイノベーションの効果をよりわかりやすく表現するために、対話型シミュレーションを行えるようにしました。
+                                レゴブロックは簡単に取り外しができます。
+                                この性質を利用して、あるレゴブロックを底面の色が違うものに交換し、その色の変化を読み取ることでシミュレーションを変化させるようにしました。
+                                モビリティイノベーションの前後比較や、特殊な状況の想定など様々な使い方ができると考えています。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" class="py-5">
+                    <div class="section-title">成果</div>
+                    <p class="text-justify px-5">
+                        準備中
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer>©TSUKUBA LEGO PROJECT</footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

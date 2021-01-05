@@ -1,0 +1,38 @@
+.main-contents {
+    background-color: #fff;
+    padding: 0;
+}
+
+.section-sub-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #E67A7A;
+}
+
+.decimal {
+    list-style-type: decimal;
+}
+
+.bg-gray {
+    background-color: #eee;
+}
+
+.img1 {
+    background-image: url(../img/top1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2 {
+    background-image: url(../img/top1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3 {
+    background-image: url(../img/top1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

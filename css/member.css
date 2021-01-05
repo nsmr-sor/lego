@@ -1,0 +1,83 @@
+/* ----------------------------------------------
+
+    テーブル
+
+---------------------------------------------- */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+}  
+table tr {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #333;
+    padding: .65rem;
+}
+table th, table td {
+    padding: .5rem;
+    border-right: 1px solid #333;
+}
+table th {
+    background-color: rgba(126, 194, 194, 1);
+}
+.name, .belongs, .grade{
+    text-align: left;
+}
+
+/* sm以下 */
+@media screen and (max-width: 768px) {
+    /* テーブル */
+    table {
+        border: 0;
+        width: 100%;
+    }
+    table th{
+        background-color: #eee;
+        display: block;
+        border-right: none;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table tr {
+        display: block;
+        margin-bottom: .625rem;
+    }
+    
+    table td {
+        border-bottom: 1px solid #333;
+        display: block;
+        font-size: .9rem;
+        text-align: right;
+        position: relative;
+        padding: .625rem .625rem .625rem 4rem;
+        border-right: none;
+    }
+    
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+    }
+    
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* lg */
+@media screen and (min-width:768px) and (max-width: 992px) {
+    table {
+        width: 80%;
+    }  
+}

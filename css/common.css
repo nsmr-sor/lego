@@ -1,0 +1,140 @@
+/* ----------------------------------------------
+
+    dark aqua：#7EC2C2 
+    light blue：#9DDCDC 
+    off-white：#FFF4E1
+    red：#E67A7A
+
+---------------------------------------------- */
+
+/* ----------------------------------------------
+
+    共通
+
+---------------------------------------------- */
+body {
+    background-color: #7ec2c2;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------------------------
+
+    ヘッダー
+
+---------------------------------------------- */
+header {
+    font-family: 'Righteous', cursive;
+    width: 100%;
+}
+header a{
+    color: #000;
+}
+header a:hover {
+    color: #FFF4E1;
+}
+
+/* ナビバー */
+.navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* サイトロゴ */
+h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* ----------------------------------------------
+
+    メイン
+
+---------------------------------------------- */
+.main-contents {
+    background-color: #fff4e1;
+    padding: 1rem;
+}
+
+.page-title {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 5rem;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+.page-title:before, .page-title:after {
+    background-color: #E67A7A;
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform : translateY(-50%);
+	width: 10px;
+	height: 10px;
+}
+.page-title:before {
+    box-shadow: 20px 0px 0px #7EC2C2,
+		40px 0px 0px #f9c21b;
+    left: 0;
+}
+.page-title:after {
+    box-shadow: -20px 0px 0px #7EC2C2,
+		-40px 0px 0px #f9c21b;
+    right: 0;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------------------------
+
+    レスポンシブ対応
+
+---------------------------------------------- */
+/* xs */
+@media screen and (max-width: 576px) {
+    /* 見出し */
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* sm */
+@media screen and (max-width: 768px) {
+    /* 見出し */
+    .page-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* md */
+@media screen and (max-width: 992px) {
+}
+
+/* lg */
+@media screen and (max-width: 1200px) {
+}
+
+/* ----------------------------------------------
+
+　　フッター    
+
+---------------------------------------------- */
+footer {
+    text-align: center;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 60px);
+    margin: 0;
+}
