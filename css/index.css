@@ -17,6 +17,12 @@
 .bg-gray {
     background-color: #eee;
 }
+.bg-offwhite {
+    background-color: #FFF4E1;
+}
+.bd-offwhite {
+    border: 3px solid #fff4e1;
+}
 
 .img1 {
     background-image: url(../img/top1.jpg);
@@ -35,4 +41,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#result ul {
+    padding: 1rem;
 }
