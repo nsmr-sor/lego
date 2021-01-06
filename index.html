@@ -38,7 +38,7 @@
         </header>
         <main>
             <div class="main-contents container">
-                <video preload="none" src="video/top.mp4" autoplay muted controls loop playsinline class="w-100"></video>
+                <video preload="none" src="video/movie.mp4" autoplay muted controls loop playsinline class="w-100"></video>
                 <section id="about" class="py-5">
                     <div class="section-title">レゴプロジェクトとは？</div>
                     <p class="text-justify px-5">
@@ -69,7 +69,7 @@
                             <p class="text-justify">
                                 大きく3つのステップを踏んで作られています。
                                 <ul class="decimal">
-                                    <li>(○○ピース以上の)レゴブロックを使って実際の街の模型を作成(図は茨城県つくば市)</li>
+                                    <li>レゴブロックを使って実際の街の模型を作成(図は茨城県つくば市)</li>
                                     <li>Unity上に交通シミュレーションを作成</li>
                                     <li>プロジェクターを用いて、2.のシミュレーションを1.で作成した模型に投影</li>
                                 </ul>
@@ -92,11 +92,39 @@
                         </div>
                     </div>
                 </section>
-                <section id="about" class="py-5">
+                <section id="result" class="py-5">
                     <div class="section-title">成果</div>
-                    <p class="text-justify px-5">
-                        準備中
-                    </p>
+                    <div class="row w-100 m-0">
+                        <div class="bg-offwhite col-12 col-md-4 p-5">
+                            <div class="section-sub-title">[学内交通シミュレーション]</div>
+                            <p class="text-justify">
+                                筑波大学の周囲を走るバスの動きのシミュレーションを行いました。時刻表の導入したり、乗客の発生率を調整するなどすることで、現実に即した実験を行うことが可能になりました。
+                                これを元にして以下の2つ、「交通課題の可視化」と「デマンドバスのシミュレーション」を行いました。
+                            </p>
+                        </div>
+                        <div class="bd-offwhite col-12 col-md-4 p-5">
+                            <div class="section-sub-title">[交通課題の可視化]</div>
+                            <p class="text-justify m-0">
+                                二つの課題について可視化を行うことができました。
+                                <ul class="decimal">
+                                    <li>
+                                        車内混雑
+                                        <span class="d-block">走行中の各バスに乗車している人数を色で表現することで、大変混雑するバスが存在することが確認できました</span>
+                                    </li>
+                                    <li>
+                                        団子運転
+                                        <span class="d-block">団子運転は、バスが連なって走行する現象です。バスの遅延や乗客数の偏りなどの原因によって発生します。渋滞の原因になるなどの問題点があるが、それをシミュレーション上でも再現することができました。</span>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="bg-offwhite col-12 col-md-4 p-5">
+                            <div class="section-sub-title">[デマンドバスのシミュレーション]</div>
+                            <p class="text-justify">
+                                対話型シミュレーションを用いて、バス停の待ち人数やデマンドバスの発車を制御しました。バスの待ち人数が増えた際に、デマンドバスを走らせることによってその待ち行列を解消することが確認できました。
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
