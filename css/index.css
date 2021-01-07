@@ -24,6 +24,19 @@
     border: 3px solid #fff4e1;
 }
 
+.youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
 .img1 {
     background-image: url(../img/top1.jpg);
     background-position: center;
