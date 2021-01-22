@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/common.css?20210122">
         <link rel="stylesheet" href="css/member.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,6 +34,12 @@
                         </li>
                     </ul>
                 </div>
+                <div id="lang-change">
+                    <select class="select" name="language">
+                        <option value="japanese" selected="">日本語</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
             </nav>
         </header>
         <main>
@@ -42,81 +48,121 @@
                     <h2 class="page-title">MEMBER</h2>
                 </div>
                 <section class="mb-5">
-                    <div class="section-title">2020年度</div>
+                    <div class="section-title ja">2020年度</div>
+                    <div class="section-title en d-none">Fiscal 2020</div>
                     <div class="w-100">
                         <table>
                             <thead>
                                 <tr>
                                     <th></th>
-                                    <th scope="col">所属</th>
-                                    <th scope="col">学年</th>
+                                    <th scope="col"><span class="ja">所属</span><span class="en d-none">Belongs</span></th>
+                                    <th scope="col"><span class="ja">学年</span><span class="en d-none">Grade</span></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-label="名前" class="name">下津大輔</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>社会工学専攻</td>
-                                    <td data-label="学年" class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">下津大輔</td>
+                                    <td data-label="名前" class="name en d-none">Daisuke Shimotsu</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>社会工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">加古捺巳</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>サービス工学専攻</td>
-                                    <td data-label="学年"class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">加古捺巳</td>
+                                    <td data-label="名前" class="name en d-none">Natsumi Kako</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>サービス工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Service Engineering<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">太田和志</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>社会工学専攻</td>
-                                    <td data-label="学年"class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">太田和志</td>
+                                    <td data-label="名前" class="name en d-none">Kazushi Ohta</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>社会工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">岡本大河</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>サービス工学専攻</td>
-                                    <td data-label="学年" class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">岡本大河</td>
+                                    <td data-label="名前" class="name en d-none">Taiga Okamoto</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>サービス工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Service Engineering<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">ソルステインソン慧グンナル</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>社会工学専攻</td>
-                                    <td data-label="学年"class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">ソルステインソン慧グンナル</td>
+                                    <td data-label="名前" class="name en d-none">Thorsteinsson Satoru Gunnar</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>社会工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">橋村ちひろ</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究科<br>社会工学専攻</td>
-                                    <td data-label="学年"class="grade">修士2年</td>
+                                    <td data-label="名前" class="name ja">橋村ちひろ</td>
+                                    <td data-label="名前" class="name en d-none">Chihiro Hashimura</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究科<br>社会工学専攻</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士2年</td>
+                                    <td data-label="学年" class="grade en d-none">second-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">小山慧太</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究群<br>社会工学学位プログラム</td>
-                                    <td data-label="学年"class="grade">修士1年</td>
+                                    <td data-label="名前" class="name ja">小山慧太</td>
+                                    <td data-label="名前" class="name en d-none">Keita Koyama</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究群<br>社会工学学位プログラム</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士1年</td>
+                                    <td data-label="学年" class="grade en d-none">first-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">山村悠一朗</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究群<br>サービス工学学位プログラム</td>
-                                    <td data-label="学年"class="grade">修士1年</td>
+                                    <td data-label="名前" class="name ja">山村悠一朗</td>
+                                    <td data-label="名前" class="name en d-none">Yuichiro Yamamura</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究群<br>サービス工学学位プログラム</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Service Engineering<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士1年</td>
+                                    <td data-label="学年" class="grade en d-none">first-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">西村詩央里</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報工学研究群<br>社会工学学位プログラム</td>
-                                    <td data-label="学年" class="grade">修士1年</td>
+                                    <td data-label="名前" class="name ja">西村詩央里</td>
+                                    <td data-label="名前" class="name en d-none">Shiori Nishimura</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報工学研究群<br>社会工学学位プログラム</td>
+                                    <td data-label="所属" class="belongs en d-none">Degree Programs in Systems and Information Engineering<br>Policy and Planning Sciences<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">修士1年</td>
+                                    <td data-label="学年" class="grade en d-none">first-year master's student</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">川辺怜</td>
-                                    <td data-label="所属" class="belongs">筑波大学理工学群社会工学類</td>
-                                    <td data-label="学年"class="grade">学類4年</td>
+                                    <td data-label="名前" class="name ja">川辺怜</td>
+                                    <td data-label="名前" class="name en d-none">Ren Kawanabe</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学理工学群社会工学類</td>
+                                    <td data-label="所属" class="belongs en d-none">the College of Policy and Planning Science<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">学類4年</td>
+                                    <td data-label="学年" class="grade en d-none">senior</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">野口宇宙</td>
-                                    <td data-label="所属" class="belongs">筑波大学未来社会工学開発研究センター</td>
-                                    <td data-label="学年"class="grade">研究員修士</td>
+                                    <td data-label="名前" class="name ja">野口宇宙</td>
+                                    <td data-label="名前" class="name en d-none">Takahiro Noguchi</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学未来社会工学開発研究センター</td>
+                                    <td data-label="所属" class="belongs en d-none">R&D Center for Frontiers of MIRAI in Policy and Technology<br>University of Tsukuba</td>
+                                    <td data-label="学年" class="grade ja">研究員修士</td>
+                                    <td data-label="学年" class="grade en d-none">Researcher</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">安東弘泰</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報系社会工学域</td>
-                                    <td data-label="学年"class="grade">准教授</td>
+                                    <td data-label="名前" class="name ja">安東弘泰</td>
+                                    <td data-label="名前" class="name en d-none">Hiroyasu Ando</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報系社会工学域</td>
+                                    <td data-label="所属" class="belongs en d-none">University of Tsukuba<br>Division of Policy and Planning Sciences</td>
+                                    <td data-label="学年" class="grade ja">准教授</td>
+                                    <td data-label="学年" class="grade en d-none">Associate Professor</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="名前" class="name">大澤義明</td>
-                                    <td data-label="所属" class="belongs">筑波大学システム情報系社会工学域</td>
-                                    <td data-label="学年"class="grade">教授</td>
+                                    <td data-label="名前" class="name ja">大澤義明</td>
+                                    <td data-label="名前" class="name en d-none">Yoshiaki Ohsawa</td>
+                                    <td data-label="所属" class="belongs ja">筑波大学システム情報系社会工学域</td>
+                                    <td data-label="所属" class="belongs en d-none">University of Tsukuba<br>Division of Policy and Planning Sciences</td>
+                                    <td data-label="学年" class="grade ja ja">教授</td>
+                                    <td data-label="学年" class="grade en d-none">Professor</td>
                                 </tr>
                             </tbody>
                         </table> 
@@ -133,5 +179,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/common.js"></script>
     </body>
 </html>
