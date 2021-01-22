@@ -49,6 +49,20 @@ h1 {
     font-weight: bold;
     margin-bottom: 0;
 }
+/* セレクトボックス */
+.select {
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    margin-left: 1rem;
+	line-height: 1.1em;
+    border-radius: 5px;
+    font-weight: bold;
+	border: 2px solid #fff;
+    background-color: #7ec2c2;
+}
+.select option {
+    font-weight: bold;
+}
 
 /* ----------------------------------------------
 

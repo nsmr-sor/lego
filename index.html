@@ -12,6 +12,7 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
         <title>LEGO PROJECT</title>
     </head>
     <body>
@@ -34,6 +35,12 @@
                         </li>
                     </ul>
                 </div>
+                <div id="lang-change">
+                    <select class="select" name="language">
+                        <option value="japanese" selected="">日本語</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
             </nav>
         </header>
         <main>
@@ -42,24 +49,37 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nh4p4M-vWXk?autoplay=1&mute=1&playsinline=1&loop=1&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <section id="about" class="py-5">
-                    <div class="section-title">レゴプロジェクトとは？</div>
-                    <p class="text-justify px-5">
+                    <div class="section-title ja">レゴプロジェクトとは？</div>
+                    <div class="section-title en d-none">What is the Lego Project?</div>
+                    <p class="text-justify px-5 ja">
                         レゴブロックで建物の高低差や標高差を表しそこにプロジェクションマッピングで交通網などの都市情報を静的・動的に投影し可視化するプロジェクトです。
                         茨城県つくば市、茨城県常総市、北海道天塩町を対象に 模型・プログラムを作成しました。
                         ライドシェアや自動運転等の新モビリティシステム導入の 実現可能性を考察しています。
+                    </p>
+                    <p class="text-justify px-5 en d-none">
+                        This is a project to visualize urban information such as traffic network by static and dynamic projection mapping on the building height difference and elevation difference represented by Lego blocks.
+                        We created models and programs for Tsukuba City in Ibaraki Prefecture, Joso City in Ibaraki Prefecture, and Teshio Town in Hokkaido.
+                        We are considering the feasibility of introducing new mobility systems such as ride-sharing and automated driving.
                     </p>
                 </section>
                 <section class="bg-gray">
                     <div class="row w-100 m-0">
                         <div class="img1 col-12 col-md-6 p-0"></div>
                         <div class="col-12 col-md-6 p-5">
-                            <div class="section-sub-title">[背景・概要]</div>
-                            <p class="text-justify">
+                            <div class="section-sub-title ja">[背景・概要]</div>
+                            <div class="section-sub-title en d-none">[Background/Overview]</div>
+                            <div class="text-justify ja">
                                 自動運転などを使ったモビリティイノベーションは社会を持続可能で便利に変えていくために重要です。
                                 しかし、その導入には市民の理解が必要不可欠であり、わかりやすくイメージしやすい方法でその効果を市民に提示する必要があります。
                                 このプロジェクトでは、人々に親しみやすいLEGOを使って多くの人々にその効果を示すこと試みます。
                                 モビリティイノベーションを、親しみやすくイメージしやすい存在にすることで、これが普及することを目指します。
-                            </p>
+                            </div>
+                            <div class="text-justify en d-none">
+                                Mobility innovation using automated driving and other technologies is important for changing society to be sustainable and convenient.
+                                However, citizens' understanding is essential for the introduction of such innovations, and it is necessary to present their effects to citizens in a way that is easy to understand and imagine.
+                                In this project, we will try to demonstrate the effects of mobility innovation to a large number of people by using the familiar LEGO.
+                                By making mobility innovation accessible and easy to imagine, we aim to spread it.
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -67,8 +87,9 @@
                     <div class="row w-100 m-0">
                         <div class="img2 col-12 col-md-6 p-0 order-md-2"></div>
                         <div class="col-12 col-md-6 order-md-1 p-5">
-                            <div class="section-sub-title">[システム]</div>
-                            <p class="text-justify">
+                            <div class="section-sub-title ja">[システム]</div>
+                            <div class="section-sub-title en d-none">[System]</div>
+                            <div class="text-justify ja">
                                 大きく3つのステップを踏んで作られています。
                                 <ul class="decimal">
                                     <li>レゴブロックを使って実際の街の模型を作成(図は茨城県つくば市)</li>
@@ -76,7 +97,16 @@
                                     <li>プロジェクターを用いて、2.のシミュレーションを1.で作成した模型に投影</li>
                                 </ul>
                                 模型はかなり精巧に作られており、標高データと建物の高さのデータを使用して現実に近いものになっています。
-                            </p>
+                            </div>
+                            <div class="text-justify en d-none">
+                                It is made in three major steps.
+                                <ul class="decimal">
+                                    <li>Using Lego bricks to create a model of an actual city (the figure shows Tsukuba City, Ibaraki Prefecture).</li>
+                                    <li>Create a traffic simulation in Unity.</li>
+                                    <li>Using a projector, the simulation of 2. is projected onto the model created in 1.</li>
+                                </ul>
+                                The model is quite elaborate and uses elevation data and building height data to make it close to reality.
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -84,29 +114,43 @@
                     <div class="row w-100 m-0">
                         <div class="img3 col-12 col-md-6 p-0"></div>
                         <div class="col-12 col-md-6 p-5">
-                            <div class="section-sub-title">[対話型シミュレーション]</div>
-                            <p class="text-justify">
+                            <div class="section-sub-title ja">[対話型シミュレーション]</div>
+                            <div class="section-sub-title en d-none">[interactive simulation]</div>
+                            <p class="text-justify ja">
                                 モビリティイノベーションの効果をよりわかりやすく表現するために、対話型シミュレーションを行えるようにしました。
                                 レゴブロックは簡単に取り外しができます。
                                 この性質を利用して、あるレゴブロックを底面の色が違うものに交換し、その色の変化を読み取ることでシミュレーションを変化させるようにしました。
                                 モビリティイノベーションの前後比較や、特殊な状況の想定など様々な使い方ができると考えています。
                             </p>
+                            <p class="text-justify en d-none">
+                                In order to express the effects of mobility innovation more clearly, an interactive simulation can be performed.
+                                Lego bricks can be easily removed.
+                                Taking advantage of this property, we replaced one Lego brick with another that has a different color on the bottom, and by reading the change in color, we can change the simulation.
+                                We believe that this system can be used in various ways, such as before and after comparisons of mobility innovations, and assumptions of special situations.
+                            </p>
                         </div>
                     </div>
                 </section>
                 <section id="result" class="py-5">
-                    <div class="section-title">成果</div>
+                    <div class="section-title ja">成果</div>
+                    <div class="section-title en d-none">Results</div>
                     <div class="row w-100 m-0">
                         <div class="bg-offwhite col-12 col-md-4 p-5">
-                            <div class="section-sub-title">[学内交通シミュレーション]</div>
-                            <p class="text-justify">
+                            <div class="section-sub-title ja">[学内交通シミュレーション]</div>
+                            <div class="section-sub-title en d-none">[campus traffic simulation]</div>
+                            <p class="text-justify ja">
                                 筑波大学の周囲を走るバスの動きのシミュレーションを行いました。時刻表の導入したり、乗客の発生率を調整するなどすることで、現実に即した実験を行うことが可能になりました。
                                 これを元にして以下の2つ、「交通課題の可視化」と「デマンドバスのシミュレーション」を行いました。
                             </p>
+                            <p class="text-justify en d-none">
+                                We conducted a simulation of the movement of a bus running around the University of Tsukuba. By introducing a timetable and adjusting the passenger generation rate, we were able to conduct experiments that were more in line with reality.
+                                Based on this, we conducted the following two experiments: "Visualization of transportation issues" and "Simulation of demand bus".
+                            </p>
                         </div>
                         <div class="bd-offwhite col-12 col-md-4 p-5">
-                            <div class="section-sub-title">[交通課題の可視化]</div>
-                            <p class="text-justify m-0">
+                            <div class="section-sub-title ja">[交通課題の可視化]</div>
+                            <div class="section-sub-title en d-none">[Visualization of Transportation Issues]</div>
+                            <div class="text-justify m-0 ja">
                                 二つの課題について可視化を行うことができました。
                                 <ul class="decimal">
                                     <li>
@@ -118,12 +162,29 @@
                                         <span class="d-block">団子運転は、バスが連なって走行する現象です。バスの遅延や乗客数の偏りなどの原因によって発生します。渋滞の原因になるなどの問題点があるが、それをシミュレーション上でも再現することができました。</span>
                                     </li>
                                 </ul>
-                            </p>
+                            </div>
+                            <div class="text-justify m-0 en d-none">
+                                We were able to visualize the two issues.
+                                <ul class="decimal">
+                                    <li>
+                                        congestion in the bus
+                                        <span class="d-block">By using colors to represent the number of passengers on each bus in motion, we were able to confirm that some buses are very crowded.</span>
+                                    </li>
+                                    <li>
+                                        Dango Unten
+                                        <span class="d-block">Dango Unten is a phenomenon in which buses travel in a row. It occurs due to causes such as bus delays and uneven number of passengers. It has some problems such as causing traffic jams, which we were able to reproduce in the simulation.</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="bg-offwhite col-12 col-md-4 p-5">
-                            <div class="section-sub-title">[デマンドバスのシミュレーション]</div>
-                            <p class="text-justify">
+                            <div class="section-sub-title ja">[デマンドバスのシミュレーション]</div>
+                            <div class="section-sub-title en d-none">[Demand Bus Simulation]</div>
+                            <p class="text-justify ja">
                                 対話型シミュレーションを用いて、バス停の待ち人数やデマンドバスの発車を制御しました。バスの待ち人数が増えた際に、デマンドバスを走らせることによってその待ち行列を解消することが確認できました。
+                            </p>
+                            <p class="text-justify en d-none">
+                                Using an interactive simulation, we controlled the number of people waiting at the bus stop and the departure of the demand bus. It was confirmed that when the number of people waiting for a bus increased, the queue could be eliminated by running a demand bus.
                             </p>
                         </div>
                     </div>
@@ -136,5 +197,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/common.js"></script>
     </body>
 </html>
